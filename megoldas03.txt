@@ -1,0 +1,12 @@
+<script>
+let generaltSzam=Math.round(Math.random()*100);
+
+if (generaltSzam%2==0){
+document.write (`${generaltSzam}`);
+}
+
+else {
+document.write (`${generaltSzam+1}`);
+}
+
+</script>

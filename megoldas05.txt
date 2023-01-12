@@ -1,0 +1,12 @@
+<script>
+
+let szam=prompt("Add meg a számot!");
+let oszto=prompt("Add meg az osztót!");
+
+if(szam%oszto==0){
+document.write(`A ${szam} osztható ${oszto}-val, úgy hogy a maradék 0`);
+}
+else{
+document.write(`A ${szam} NEM osztható ${oszto}-val, úgy hogy a maradék 0`);
+}
+</script>

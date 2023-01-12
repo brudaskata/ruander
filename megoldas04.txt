@@ -1,0 +1,33 @@
+<script>
+
+let eletkor=prompt("Add meg az életkort!");
+
+if (eletkor<0){
+	document.write(`${eletkor}: Hibás adat!`);
+}
+else if(eletkor<6){
+	document.write(`${eletkor}: kisgyermekkor`);
+}
+else if(eletkor<12){
+	document.write(`${eletkor}: gyermekkor`);
+}
+else if(eletkor<16){
+	document.write(`${eletkor}: serdülőkor`);
+}
+else if(eletkor<20){
+	document.write(`${eletkor}: ifjúkor`);
+}
+else if(eletkor<30){
+	document.write(`${eletkor}: fiatal felnőtt kor`);
+}
+else if(eletkor<60){
+	document.write(`${eletkor}: felnőtt kor`);
+}
+else if(eletkor<120 && eletkor>60){
+	document.write(`${eletkor}: aggkor`);
+}
+else {
+	document.write(`${eletkor}: Hibás adat`);
+}
+
+</script>

@@ -1,0 +1,9 @@
+<script>
+document.write ("Brudás Katalin<br>");
+document.write ("Team#11<br>");
+document.write ("HTML értése: 95%<br>");
+document.write ("CSS értése: 80%<br>");
+document.write ("Javascript értése: 60%");
+
+</script>
+

@@ -1,0 +1,9 @@
+<script>
+
+let szam=prompt("Add meg a számot");
+let mertek=prompt("Add meg a hatványozás mértékét");
+let hatvany=Math.pow(szam,mertek);
+
+document.write (`A(z) ${szam} ${mertek}-ik hatványa: ${hatvany}`);
+
+</script>
