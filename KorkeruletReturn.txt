@@ -1,0 +1,10 @@
+<script>
+function KorKerulet(radius){
+return kerulet=2*radius*Math.PI;
+}
+
+document.write("A kör kerülete:"+KorKerulet(8));
+document.write("<hr>A kör kerülete:"+KorKerulet(4));
+document.write("<hr>A kör kerülete:"+KorKerulet(2,8));
+
+</script>

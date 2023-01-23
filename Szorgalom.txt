@@ -1,0 +1,30 @@
+<script>
+
+function Szorgalom(jegy){
+document.write("<hr>");
+
+if(jegy==5){
+	document.write(`${jegy} érdemjegy: példás szorgalom`);
+}
+else if(jegy==4){
+	document.write(`${jegy} érdemjegy: jó szorgalom`);
+}
+else if(jegy==3){
+	document.write(`${jegy} érdemjegy: változó szorgalom`);
+}
+else if(jegy==2){
+	document.write(`${jegy} érdemjegy: hanyag szorgalom`);
+}
+else{
+	document.write(`${jegy} érdemjegy: Hibás adat!`);
+}
+}
+
+Szorgalom(5);
+Szorgalom(4);
+Szorgalom(3);
+Szorgalom(2);
+Szorgalom(1);
+
+
+</script>

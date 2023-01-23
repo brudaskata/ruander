@@ -1,0 +1,31 @@
+<script>
+
+function KoordinataTengely(){
+
+let x=prompt("Add meg az x koordinátáját:");
+let y=prompt("Add meg az y koordinátáját:");
+if(x>0 && y>0){
+	document.write(`A ${x}, ${y} koordináta az első síknegyedben van.`);
+}
+else if(x<0 && y>0){
+	document.write(`A ${x}, ${y} koordináta az második síknegyedben van.`);
+}
+else if(x<0 && y<0){
+	document.write(`A ${x}, ${y} koordináta az harmadik síknegyedben van.`);
+}
+else if(x>0 && y<0){
+	document.write(`A ${x}, ${y} koordináta az negyedik síknegyedben van.`);
+}
+else if(x==0 && y==0){
+	document.write(`A ${x}, ${y} koordináta az origóban van.`);
+}
+else if(y==0){
+	document.write(`A ${x}, ${y} koordináta az x tengelyen van.`);
+}
+else{
+	document.write(`A ${x}, ${y} koordináta az y tengelyen van.`);
+}
+}
+
+KoordinataTengely();
+</script>

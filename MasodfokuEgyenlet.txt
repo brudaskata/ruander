@@ -1,0 +1,33 @@
+<script>
+function MasodfokuEgyenlet(a,b,c){
+
+document.write("<hr>");
+document.write(`A vizsgált másodfokú egyenlet: ${a}x<sup>2</sup>+(${b})+(${c})`);
+if(a==0){
+	document.write("Az egyenlet nem másodfokú");
+}
+else{
+	let d=(b*b)-(4*a*c);
+	if(d<0){
+    	document.write("Nincs megoldás");
+    }
+    else if(d==0){
+    	document.write("Egy megoldása van:<br>");
+        let x1=-b/(2*a);
+        document.write("x1="+x1);
+    }
+    else{
+    	document.write("Két megoldás van:<br>");
+        let x1=(-b+Math.sqrt(d))/(2*a);
+        let x2=(-b-Math.sqrt(d))/(2*a);
+        document.write("x1="+x1+"<br>");
+        document.write("x2="+x2);
+    }
+}
+}
+
+MasodfokuEgyenlet(5,15,8);
+MasodfokuEgyenlet(36,9,12);
+MasodfokuEgyenlet(105,79,3);
+
+</script>

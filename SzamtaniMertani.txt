@@ -1,0 +1,26 @@
+<script>
+function SzamtaniMertani(){
+
+let szam1=prompt("Add meg a sorozat első elemét:");
+let szam2=prompt("Add meg a sorozat második elemét:");
+let szam3=prompt("Add meg a sorozat harmadik elemét:");
+if(((szam2-szam1)==(szam3-szam2)) &&((szam2/szam1)==(szam3/szam2)))
+{
+	document.write(`A ${szam1}, ${szam2}, ${szam3} sorozat számtani és mértani`);
+}
+else if((szam2-szam1)==(szam3-szam2))
+{
+	document.write(`A ${szam1}, ${szam2}, ${szam3} sorozat számtani`);
+}
+else if((szam2/szam1)==(szam3/szam2))
+{
+	document.write(`A ${szam1}, ${szam2}, ${szam3} sorozat mértani`);
+}
+else
+{
+	document.write(`A ${szam1}, ${szam2}, ${szam3} sorozat NEM számtani és NEM mértani!`);
+}
+}
+
+SzamtaniMertani();
+</script>

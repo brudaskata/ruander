@@ -1,0 +1,16 @@
+<script>
+
+//function ParosParatlan();
+
+function ParosParatlan(vizsgaltSzam){
+let generaltSzam=Math.round(Math.random()*100);
+if(generaltSzam%2==0){
+	document.write(`A(z) ${generaltSzam} páros szám`);
+}
+else{
+	document.write(`A(z) ${generaltSzam} páratlan szám`);
+}
+}
+
+ParosParatlan();
+</script>

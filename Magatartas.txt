@@ -1,0 +1,27 @@
+<script>
+function Magatartas (jegy){
+document.write("<hr>");
+if(jegy==5){
+	document.write(`${jegy}: példás magatartás`);
+}
+else if(jegy==4){
+	document.write(`${jegy}: jó magatartás`);
+}
+else if(jegy==3){
+	document.write(`${jegy}: változó magatartás`);
+}
+else if(jegy==2){
+	document.write(`${jegy}: rossz magatartás`);
+}
+else{
+	document.write(`${jegy}: Hibás adat!`);
+}
+}
+
+Magatartas(5);
+Magatartas(4);
+Magatartas(3);
+Magatartas(2);
+Magatartas(1);
+Magatartas(12);
+</script>

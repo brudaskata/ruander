@@ -1,0 +1,22 @@
+script>
+
+function KisebbNagyobbEgyenlo(szamEgy, szamKetto){
+document.write("<hr>");
+if(szamEgy>szamKetto){
+	document.write(`A(z) ${szamEgy} nagyobb mint a(z) ${szamKetto}`);
+}
+else if(szamEgy<szamKetto){
+	document.write(`A(z) ${szamEgy} kisebb mint a(z) ${szamKetto}`);
+}
+else{
+	document.write(`A két szám: ${szamEgy} és ${szamKetto} egyenlő!`);
+}
+}
+
+KisebbNagyobbEgyenlo(5,7)
+KisebbNagyobbEgyenlo(15,7)
+KisebbNagyobbEgyenlo(29,29)
+KisebbNagyobbEgyenlo(0,77)
+KisebbNagyobbEgyenlo(64,22)
+
+</script>

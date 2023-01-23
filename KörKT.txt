@@ -1,0 +1,13 @@
+<script>
+//function KorKeruletTerulet();
+//paraméteres, visszatérési érték nélküli
+
+function KorKeruletTerulet(radius){
+let kerulet=2*radius*Math.PI;
+let terulet=radius*radius*Math.PI;
+document.write("A "+radius+" egységnyi sugarú kör kerülete:"+kerulet+"<br>");
+document.write(`A ${radius} egységnyi sugarú kör területe:${terulet}`);
+}
+
+KorKeruletTerulet (6);
+</script>

@@ -1,0 +1,31 @@
+<script>
+function Erdemjegy(jegy){
+document.write("<hr>");
+
+if(jegy==5){
+	document.write(`${jegy} érdemjegy: jeles`);
+}   
+else if(jegy==4){
+	document.write(`${jegy} érdemjegy: jó`);
+}
+else if(jegy==3){
+	document.write(`${jegy} érdemjegy: közepes`);
+}
+else if(jegy==2){
+	document.write(`${jegy} érdemjegy: elégséges`);
+}
+else if(jegy==1){
+	document.write(`${jegy} érdemjegy: elégtelen`);
+}
+else{
+	document.write(`${jegy} érdemjegy: hibás adat!`);
+}
+}
+Erdemjegy(5);
+Erdemjegy(4);
+Erdemjegy(3);
+Erdemjegy(2);
+Erdemjegy(1);
+Erdemjegy(15);
+
+</script>

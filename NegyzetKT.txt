@@ -1,0 +1,18 @@
+<script>
+
+//function NegyzetKeruletTerulet();
+//paraméteres, visszatérési érték nélkül
+
+function NegyzetKeruletTerulet(aOldal){
+let kerulet=aOldal*4;
+let terulet=aOldal*aOldal;
+document.write ("<hr>");
+document.write("A négyzet kerülete:"+kerulet+"<br>");
+document.write(`A négyzet területe:${terulet}`);
+}
+
+NegyzetKeruletTerulet(8);
+NegyzetKeruletTerulet(6);
+NegyzetKeruletTerulet(12);
+
+</script>

@@ -1,0 +1,22 @@
+<script>
+
+function ParosParatlanNulla(vizsgaltSzam){
+document.write("<hr>");
+if(vizsgaltSzam>0){
+	document.write(`A ${vizsgaltSzam} pozitív`);
+}
+else if(vizsgaltSzam<0){
+	document.write(`A ${vizsgaltSzam} negatív`);
+}
+else{
+	document.write(`A ${vizsgaltSzam} szám nulla`);
+}
+}
+ParosParatlanNulla(8);
+ParosParatlanNulla(-65);
+ParosParatlanNulla(0);
+ParosParatlanNulla(74);
+ParosParatlanNulla(-63);
+
+
+</script>

@@ -1,0 +1,17 @@
+<script>
+
+function SzerkeszthetoHaromszog(aOldal,bOldal,cOldal){
+document.write("<hr>")
+if(aOldal+bOldal>cOldal && bOldal+cOldal>aOldal && aOldal+cOldal>bOldal){
+		document.write(`A ${aOldal},${bOldal},${cOldal} oldalú háromszög megszerkeszthető`);
+}
+else{
+		document.write(`A ${aOldal},${bOldal},${cOldal} oldalú háromszög NEM szerkeszthető meg`);
+}
+}
+SzerkeszthetoHaromszog(2,8,7)
+SzerkeszthetoHaromszog(1,5,9)
+SzerkeszthetoHaromszog(2,88,4)
+SzerkeszthetoHaromszog(2,4,3)
+
+</script>
