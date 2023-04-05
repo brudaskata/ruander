@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottó húzás</title>
+    <style>
+        body {
+            background-image: url(4-leaf-clover.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        #lottoszamokHelye {
+            width: 600px;
+            height: 130px;
+            background-color: lightgreen;
+            margin: 0px auto;
+            font-size: 100px;
+            font-weight: bold;
+            padding: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-weight: bold;
+            font-size: 3em;
+        }
+
+        img {
+            display: block;
+            width: 200px;
+            height: 100px;
+            margin: 0px auto;
+            border-radius: 15px;
+        }
+
+        .btn {
+            font-size: 20px;
+            padding: 5px 10px;
+            display: block;
+            text-align: center;
+            margin: 0px auto;
+            margin-top: 10px;
+            background-color: rgba(197, 183, 190, 0.6);
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            box-shadow: 0 10px #999;
+
+        }
+
+        .btn:active {
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Az ötös lottó nyerőszámai emelkedő számsorrendben</h1>
+
+    <div id="lottoszamokHelye"></div>
+
+
+    <button class="btn" id="huzas"><b>Sorsolás</b><img src="lotteryballs.jpg" alt="Számlabdák"
+            title="Számlabdák"></button>
+
+
+    <script>
+
+        let sorsolasGomb = document.querySelector("#huzas");
+        sorsolasGomb.addEventListener("click", Lottohuzas);
+
+        function Lottohuzas() {
+            let lottoSzamok = [];
+
+            for (let i = 0; i < 5; i++) {
+                let randomLottoSzam = Math.round(Math.random() * 89) + 1;
+                if (!lottoSzamok.includes(randomLottoSzam)) {
+                    lottoSzamok.push(randomLottoSzam);
+                }
+                else {
+                    i--;
+                }
+            }
+            lottoSzamok.sort(function (a, b) { return a - b });
+            document.querySelector("#lottoszamokHelye").innerHTML = lottoSzamok;
+        }
+
+
+    </script>
+</body>
+
+</html>
