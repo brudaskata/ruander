@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Alapok</title>
+    <style>
+        #megjelenitendoElem {
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+            border: 1px dotted black;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="megjelenitGomb">Elem megjelenítése</button>
+    <button id="elrejtGomb">Elem elrejtése</button>
+    <button id="toggleGomb">Elem elrejtése/megjelenítése</button>
+
+    <hr>
+
+    <input type="text" id="szoveg">
+    <p id="karakterszam">Beírt karakerek száma:</p>
+
+    <hr>
+
+    <input type="text" id="masikszoveg" name="masikszoveg">
+    <button id="toggleSzoveg">Szöveg megjelenítése/elrejtése</button>
+
+    <hr>
+
+    <input type="number" id="halmazallapot">
+
+
+
+
+    <script src="jquery-3.6.4.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            $("#megjelenitGomb").click(function () {
+                $("#megjelenitendoElem").slideDown();
+            });
+
+            $("#elrejtGomb").click(function () {
+                $("#megjelenitendoElem").slideUp();
+            });
+
+            $("#toggleGomb").click(function () {
+                $("#megjelenitendoElem").slideToggle();
+            });
+
+            $("#toggleSzoveg").click(function () {
+                $("#masikszoveg").toggle();
+            });
+
+
+        });
+
+    </script>
+</body>
+
+</html>
